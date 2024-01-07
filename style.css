@@ -1,3 +1,13 @@
+@font-face {/*---------Tipografia---------*/
+    /*Fonte para Títulos*/
+    font-family: Brandier;
+    src: url(https://befonts.com/brandier-font-family.html);
+    /*Fonte para Textos Corridos*/
+    font-family: Montserrat;
+    src: url(https://befonts.com/montserrat-font-family.html);
+
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,21 +16,38 @@ body {
     background-color: #111111; /* Cor de fundo escura */
     color: #fff; /* Cor do texto */
 }
+
+/*----------------------Tipografia-------------------------*/
+
+
+h1 {
+    color: #bdbdbd; /* Cor do título */
+    margin-bottom: 22px;
+    font-size: 3.2em;
+    font-family: Brandier;
+    font-weight: 800;
+    
+}
+
 h2 {
-    font-size: 2em;
-    color: #000000;
+    font-size: 2.3em;
+    color: white;
+    font-family: Brandier;
 }
 
 p {
-    font-size: 1.1em;
-    color: #0e0e0e;
+    font-size: 1.3em;
+    color: white;
+    font-family: Montserrat;
 }
+/*----------------------------------------------------------*/
 
 /*inicio navbar*/
 .navbar {  
     background-color: #000000;
     overflow: hidden;
     padding: 15px;
+    padding: 10px 15%;
     position: sticky;
     top: 0;
     z-index: 1000; /* Valor alto para garantir que esteja acima de outros elementos */
@@ -60,21 +87,14 @@ p {
 }
 /*fim - seção inicial*/
 
+
+/*--------------------Conteudo geral-------------------*/
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
     z-index: 100
-}
-
-h1 {
-    color: #bdbdbd; /* Cor do título */
-    margin-bottom: 22px;
-}
-
-p {
-    color: white;
 }
 
 .form-container {
@@ -133,19 +153,15 @@ button:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
+    padding-bottom: 40px;
     background-color: #3f3f3f5e;
-    height: 60%;
+    width: 80%;
+    max-width: 800px;
+    height: 60vh;
     z-index: 100
 }
+/*----------------------------------------------------------------*/
 
-h2 {
-    color: #ffffff; /* Cor do título da seção de conteúdo */
-    margin-bottom: 20px;
-}
-
-p {
-    margin: 7px;
-}
 
 
 /*------------------------inicio carrosel-------------------------*/
@@ -216,14 +232,19 @@ iframe{
 .whatsapp-button {
     position: fixed;
     bottom: 20px; /* Distância do fundo da página */
-    right: 20px; /* Distância da borda direita da página */
-    background-color: #25d366; /* Cor verde do WhatsApp */
+    right: 100px; /* Distância da borda direita da página */
+    background-color: #25d36500; /* Cor verde do WhatsApp */
     color: #fff;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     z-index: 1000; /* Valor alto para garantir que esteja acima de outros elementos */
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
 }
 /*-----------------------fim botão whatsapp---------------------*/
 
@@ -283,5 +304,8 @@ iframe{
     .navbar img {
         float: none;
         margin-bottom: 10px;
+    }
+    .caixa-texto p{
+        padding: 20px;
     }
 }
