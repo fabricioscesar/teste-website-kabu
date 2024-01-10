@@ -95,7 +95,7 @@ p {
     transform: translate(-50%, -50%);
 }
 
-button {
+.qsm-button {
     background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
@@ -108,7 +108,7 @@ button {
     left: 10%;
 }
 
-button:hover {
+.qsm-button:hover {
     background-color: #45a049;
 }
 /*fim - seção inicial*/
