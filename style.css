@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #111111; /* Cor de fundo escura */
+    background-color: #000000; /* Cor de fundo escura */
     color: #fff; /* Cor do texto */
 }
 
@@ -76,14 +76,40 @@ p {
 
 /*inicio - seção inicial*/
 .hero-section { 
+    background-image: url("img/Banner.png");
     background-size: cover;
     background-position: center;
-    height: 100vh; /* 100% da altura da tela */
+    height: 80vh; /* 100% da altura da tela */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 100
+    z-index: 100;
+    position: relative;
+}
+
+.img-megafone {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top:  75%;
+    left: 5%;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 /*fim - seção inicial*/
 
@@ -105,20 +131,6 @@ p {
     z-index: 100
 }
 
-button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    z-index: 100
-}
-
-button:hover {
-    background-color: #45a049;
-}
-
 #contato {
     background-color: #000000; /* Cor de fundo das seções de conteúdo */
     background-size: cover;
@@ -138,13 +150,22 @@ button:hover {
     background-color: #000000; /* Cor de fundo das seções de conteúdo */
     background-size: cover;
     background-position: center;
-    position: relative;
-    height: 110vh; /* 100% da altura da tela */
+    height: 130vh; /* 100% da altura da tela */
+    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     z-index: 100
+}
+
+article {
+    display: inline-flex;
+    width: 260px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+
 }
 
 .caixa-texto{
@@ -157,7 +178,7 @@ button:hover {
     background-color: #3f3f3f5e;
     width: 80%;
     max-width: 800px;
-    height: 60vh;
+    height: 50%;
     z-index: 100
 }
 /*----------------------------------------------------------------*/
@@ -294,11 +315,20 @@ iframe{
 
 
 /* Adiciona estilos específicos para telas menores (tablets e celulares) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+    .section-servicos {
+        height: 260vh; /* 100% da altura da tela */
+    }
+
+    .img-megafone {
+        width: 20px;
+        height: 20px;
+    }
+
     .navbar a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
     }
 
     .navbar img {
