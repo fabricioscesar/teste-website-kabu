@@ -20,3 +20,16 @@ document.addEventListener('DOMContentLoaded', function () {
         changeSlide(1);
     }, 10000); // Troca de slide a cada 5 segundos (ajuste conforme necessário)
 });
+//fim do codigo carrossel
+
+//menu togglenav
+
+function toggleNav() {
+    var nav = document.querySelector(".navbar");
+    if (nav.className === "navbar") {
+        nav.className += " responsive";
+    } else {
+        nav.className = "navbar";
+    }
+}
+

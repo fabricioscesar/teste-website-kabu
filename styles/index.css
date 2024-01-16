@@ -1,0 +1,80 @@
+@import url("secaoinicial.css");
+@import url("conteudogeral.css");
+@import url("carrossel.css");
+@import url("mobile.css");
+
+@font-face {/*---------Tipografia---------*/
+    /*Fonte para Títulos*/
+    font-family: Brandier;
+    src: url(https://befonts.com/brandier-font-family.html);
+    /*Fonte para Textos Corridos*/
+    font-family: Montserrat;
+    src: url(https://befonts.com/montserrat-font-family.html);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000000; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto */
+}
+
+/*----------------------Tipografia-------------------------*/
+
+
+h1 {
+    color: #bdbdbd; /* Cor do título */
+    margin-bottom: 22px;
+    font-size: 3.2em;
+    font-family: Brandier;
+    font-weight: 800;
+    
+}
+
+h2 {
+    font-size: 2.3em;
+    color: white;
+    font-family: Brandier;
+}
+
+p {
+    font-size: 1.3em;
+    color: white;
+    font-family: Montserrat;
+}
+/*----------------------------------------------------------*/
+
+/*inicio navbar*/
+.navbar {  
+    background-color: #000000;
+    overflow: hidden;
+    padding: 15px;
+    padding: 10px 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Valor alto para garantir que esteja acima de outros elementos */
+}
+
+.navbar img {
+    float: left;
+    height: 50px; /* ajuste a altura conforme necessário */
+}
+
+.navbar a {
+    float: right;
+    display: block;
+    color: #fff;
+    background-color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+/*fim navbar*/

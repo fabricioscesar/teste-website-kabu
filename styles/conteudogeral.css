@@ -1,0 +1,140 @@
+/*--------------------Conteudo geral-------------------*/
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    z-index: 100
+}
+
+.form-container {
+    background-color: #ffffff00; /* Cor de fundo do formulário */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    z-index: 100
+}
+
+#contato {
+    background-color: #000000; /* Cor de fundo das seções de conteúdo */
+    background-size: cover;
+    background-position: center;
+    height: 140vh; /* 100% da altura da tela */
+    margin-top: 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 100
+}
+
+.section-servicos {
+    background-image: url('../img/background02.jpg');
+    position: relative;
+    background-color: #000000; /* Cor de fundo das seções de conteúdo */
+    background-size: cover;
+    background-position: center;
+    height: 130vh; /* 100% da altura da tela */
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 100
+}
+
+article {
+    display: inline-flex;
+    width: 260px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+
+}
+
+.caixa-texto{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: #3f3f3f5e;
+    width: 80%;
+    max-width: 800px;
+    height: 50%;
+    z-index: 100
+}
+/*----------------------------------------------------------------*/
+
+/*--------------inicio iframe formulario google-----------------*/
+iframe{
+    width: 80%;
+    height: 100vh; /* 100% da altura da tela */
+    margin-top: 10px;
+}
+/*--------------fim iframe formulario google--------------------*/
+
+/*---------------------inicio botão whatsapp--------------------*/
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: 100px; /* Distância da borda direita da página */
+    background-color: #25d36500; /* Cor verde do WhatsApp */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000; /* Valor alto para garantir que esteja acima de outros elementos */
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+}
+/*-----------------------fim botão whatsapp---------------------*/
+
+
+/*------------------------inicio footer-------------------------*/
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-section h2 {
+    color: #fff;
+}
+
+.footer-section p {
+    color: #ccc;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 1px solid #555;
+}
+/*------------------------fim footer-------------------------*/
