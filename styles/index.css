@@ -24,7 +24,6 @@ body {
 
 /*----------------------Tipografia-------------------------*/
 
-
 h1 {
     color: #bdbdbd; /* Cor do título */
     margin-bottom: 22px;
@@ -62,6 +61,8 @@ p {
     float: left;
     height: 50px; /* ajuste a altura conforme necessário */
 }
+
+.icon {font-size: 1.2em;}
 
 .navbar a {
     float: right;
